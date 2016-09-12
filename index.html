@@ -1,21 +1,11 @@
-<!DOCTYPE html>
-<html>
-<head>
- <title>Galit Garzon / Home</title>
-  <link rel="icon" 
-      type="GG.png" 
-      href="http://GG.png/myicon.png">
-   <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,900italic,700italic' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Old+Standard+TT:400,700' rel='stylesheet' type='text/css'>
-<style>
-body{
-text-align:center;
-margin-top:43px;
-background-color:#b5b5b6;
-color:white;
-font-family: 'Playfair Display', serif;
-
-
+<!doctype html>
+ <html>
+ <head>
+ <link href='http://fonts.googleapis.com/css?family=Playfair+Display:400,700' rel='stylesheet' type='text/css'>
+ <link href='http://fonts.googleapis.com/css?family=Seaweed+Script' rel='stylesheet' type='text/css'>
+ <link href='http://fonts.googleapis.com/css?family=Bad+Script' rel='stylesheet' type='text/css'>
+ <link href='http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css' rel='stylesheet'>
+ <link href="style.css" rel="stylesheet">
  }
  header{
  background-color: #927886;
@@ -23,73 +13,55 @@ font-family: 'Playfair Display', serif;
  margin-top:30px;
   background-image: url(https://c2.staticflickr.com/6/5019/5561808616_602cd643da_b.jpg);
  }
-
- h1{
-font-family: 'Old Standard TT', serif;
- }
- footer{
- margin-top:43px;
- color:white;
- background-color:#b5b5b6;
- padding:26px;
-} 
- #intro{
-  background-color:#767576;
- }
-  nav{
-   position:absolute
-   top:10px;
-   left:50px;
-   color:white;
-  }
-  a{
-   color:white;
-   text-decoration:none;
-  }
- #resume {
-  background-color:white;
-  padding:50px;
-  color:black;
-  }
-  #resume iframe{
-   width:500px;
-   height:250px;
-  }
-</style>
-</head>
-<body>
-<header>
+ </head>
+ <body>
  <nav>
- <a href="index.html">Home</a>   I <a href="DSCN2099.JPG">About</a> I <a href="index.html">Work</a> I  <a href="index.html">Contact</a>
- </nav>
- 
- <img src="logo.gif" heigh:"120x120 px">
+<ul id="sl_menu" class="sl_menu">
+			<li>
+				<a href=http://ggzealstudio.com/>Home</a>/
+			</li>
+			<li>
+				<a href="about.html">About</a>/
+			</li>
+			<li>
+				<a href="resume.html">Resume</a>/
+			</li>
+			<li>
+				<a href="contact.html">Contact</a>
+			</li>
+		</ul>
+</nav>
 
-</header>
-<section id="intro">
- <h1>WELCOME</h1>
-My name is Galit Garzon Blejman.
- <p>My major is Visual Arts.</p>
- <p>enjoy my art exhibition.</p>
+  <header>
+ <img src="https://farm8.staticflickr.com/7651/16175020594_ed220eebfd_b.jpg" width="500" style="margin-bottom: -175px;">
+ <h1>Website</h1>
+ </header>
+ <section id="new">
+   <h2> <em class="fa fa-bolt"></em> Creative <em class="fa fa-paper-plane"></em> Photography <em class="fa fa-spinner"></em> Visual Arts </h2>
  </section>
- <br><section id="WORK">
-  <h1>WORK</h1>
-  <a  href="work.html"><img src="ultima.jpg" width="700x" height="500px"></a>
- </section>
-  <section> 
-  <a  href="work.html"> <img src="pashhh.jpg" width="700px" height="500px"></a>
- </section>
- <section>
-  <a  href="work.html"><img src="papapa.jpg"  width="700px" height="500"></a>
- </section>
- <section id="resume"
- <iframe src="Resume.pdf"></iframe>
- </section>
-<br>
-<footer>
-  <h2>social media</h2>
-  <br><a href="https://www.instagram.com/galitgarzon/" target:"_blank"><img src="2016_instagram_logo.png"></a> 
-  </footer>
- </body>
-</html>
- 
+<section>
+  <a href="portfolio.html" class="myButton" style="margin-top: 100px;">See My Work</a>
+</section>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery.lettering.js"></script>
+		<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+		<script type="text/javascript" src="js/jquery.hoverwords.js"></script>
+		
+		<script type="text/javascript">
+			$(window).load(function(){
+				$('#sl_menu').find('li:not(:last) > a')
+							 .hoverwords({ overlay:true })
+							 .end()
+							 .find('li:last > a')
+							 .hoverwords({ overlay:true , dir:'rightleft' });
+				
+				$('#example1').hoverwords({ delay:50 });
+				$('#example2').hoverwords();
+				$('#example3').hoverwords();
+				$('#example4').hoverwords({ overlay:true});
+				$('#example5').hoverwords({ delay:60 });
+				
+			});
+		</script>
+</body>
+ </html>
