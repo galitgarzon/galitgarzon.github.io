@@ -8,9 +8,9 @@
 
  body{
  margin: 0;
- background-color: white;
- color: #C49799;
- font-family: sans-serif;
+ background-color: #b5b5b6;
+ color: white;
+ font-family: 'Playfair Display', serif;
  }
  header{
    text-align: center;
@@ -25,10 +25,10 @@ header h2 {
  text-align: center;
      padding: 30px;
      margin: 0;
-  background-color: #AFD0D6;
+  background-color:  #927886;;
   font-family: 'Bad Script', cursive;
   font-size: 30px;
-  color: #afd0d6
+  color: #b5b5b6
   }
 
    p {
